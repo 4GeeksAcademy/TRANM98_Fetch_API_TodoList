@@ -1,12 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap');
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;  
+}
 
-*/
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: pink;
+    text-align:center;
+    margin-top: 40px;
+    
+}
+
+.todo-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding:40px;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    padding: 10px;
+    margin: 0;
+}
+
+.task-list{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.input-container{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container label{
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.input-container input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2 rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.delete-icon{
+    cursor: pointer;
+    color:rgba(137, 134, 134, 0.2);
+    transition: color 0.2s ease-in-out;
+}
+
+.delete-icon:hover{
+    color:red;
+}
